@@ -13,8 +13,11 @@
 <body>
   <div class="column wrapper">
     {% include './components/header/index.html' %}
-    {% block content %}{% endblock %}
+    <div class="column content flex no-wrap">
+      {% block content %}{% endblock %}
+    </div>
     {% include './components/footer/index.html' %}
+    {% include './components/loader/index.html' %}
   </div>
   {% assets "scripts" %}
     <script src="{{ ASSET_URL }}"></script>

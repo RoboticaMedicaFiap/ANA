@@ -3,9 +3,8 @@ const handleCopyright = () => {
 }
 
 const handleListeners = () => {
-  $('.interactor__start').on('click', (e) => {
-    console.log()
-    window.location.href = `/page-${Number(e.target.dataset.step) + 1}`
+  $('.canvas__start').on('click', () => {
+    window.location.href = '/page-1'
   })
 }
 
@@ -16,7 +15,9 @@ const handleLoader = () => {
 const handleParticles = () => {
   Particles.init({
     selector: ".canvas__start",
-    color: ["#faebd7", "#2e295e", "#ff0266"],
+    sizeVariations: 5,
+    speed: 1,
+    color: ["#0c5f91", "#242424", "#ff0266"],
     connectParticles: true,
   })
 }

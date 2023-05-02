@@ -22,4 +22,4 @@ dev:
 
 .PHONY: prod
 start:
-	python3 -m flask run -h 0.0.0.0
+	python3 -m flask run -h localhost -p 3000
