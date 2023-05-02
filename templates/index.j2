@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  {% if step == 0 %}
+    {% include 'pages/page-0.html' %}
+  {% endif %}
+
+  {% if step == 1 %}
+    {% include 'pages/page-1.html' %}
+  {% endif %}
+
+  {% if step == 2 %}
+    {% include 'pages/page-2.html' %}
+  {% endif %}
+
+  {% if step == 3 %}
+    {% include 'pages/page-3.html' %}
+  {% endif %}
+{% endblock %}

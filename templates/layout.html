@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta name='viewport' content='initial-scale=1, maximum-scale=1, user-scalable=no' />
+  <meta charset="UTF-8">
+  <!-- <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}"> -->
+  <title>{{ title }}</title>
+  {% assets "styles" %}
+    <link rel=stylesheet type=text/css href="{{ ASSET_URL }}">
+  {% endassets %}
+</head>
+
+<body>
+  <div class="column wrapper">
+    {% include './components/header/index.html' %}
+    {% block content %}{% endblock %}
+    {% include './components/footer/index.html' %}
+  </div>
+  {% assets "scripts" %}
+    <script src="{{ ASSET_URL }}"></script>
+  {% endassets %}
+</body>
+
+</html>

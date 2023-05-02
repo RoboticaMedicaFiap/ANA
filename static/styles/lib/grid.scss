@@ -1,0 +1,45 @@
+.align {
+  &-center {
+    align-items: center;
+  }
+}
+
+.column {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  padding: 0 24px;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify {
+  &-center {
+    justify-content: center;
+  }
+}
+
+.no {
+  &-wrap {
+    flex-wrap: nowrap;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}

@@ -9,18 +9,17 @@ PROJECT := $(shell basename $(PWD))
 
 .PHONY: install
 install:
-	python3 -m pip install -U -r requirements.txt
+	pip3 install -U --upgrade pip && pip3 install -U -r requirements.txt
 
 ## Scripts
-
-### Development
+.PHONY: clean
+clean:
+	pip3 uninstall -y -U -r requirements.txt
 
 .PHONY: dev
 dev:
-	python3 -m flask --app app --debug run --host=localhost --port=3000
-
-### Production
+	python3 -m flask run -h localhost -p 3000 --debug
 
 .PHONY: prod
 start:
-	python3 -m flask run
+	python3 -m flask run -h 0.0.0.0

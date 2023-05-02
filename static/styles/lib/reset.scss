@@ -1,0 +1,38 @@
+:root {
+  color: #333;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body, button, div, img, ul, li {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+
+  &:after,
+  &:before {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  font-size: 100%;
+  list-style-type: none;
+  transition: all .2s ease-in-out;
+}
+
+button {
+  background: transparent;
+  border: 0;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0
+}
