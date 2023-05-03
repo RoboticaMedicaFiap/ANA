@@ -6,9 +6,10 @@ echo "------------------"
 
 echo "Install Python 3"
 
-culr.exe --output /tmp/python3 --url https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe
-cd /tmp/
-./python3.exe
+cd %USERPROFILE%/AppData/Local/Temp
+
+curl.exe --output ./python3.exe --url https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe
+python3.exe
 
 echo "------------------"
 
@@ -19,5 +20,7 @@ choco install make
 echo "------------------"
 
 echo "Setup finished!"
+
+pause
 
 exit
