@@ -4,6 +4,7 @@
 
 - [Instalação](#instalação)
 - [Configuração](#configuração)
+- [Dependencias](#dependencias)
 - [Uso](#uso)
 - [Suporte](#suporte)
 - [Contribuição](#contribuição)
@@ -75,6 +76,17 @@ Entao, vamos instalar as dependencias. Para isso, rode o comando:
 ```
 
 Esse comando vai instalar as dependencias do arquivo **requirements.txt**
+
+## Dependencias
+**Flask**\
+**opencv-python**\
+**Python-3**\
+**autopep8 -** Ferramenta que formata o codigo para ficar de acordo com a norma [PEP 8](https://peps.python.org/pep-0008/) \
+**python-dotenv -** Controle das variaveis de ambiente\
+**jsmin -** Controle dos bundles js\
+**cssmin -** Controle dos bundles css\
+**pyscss -** Controle dos bundles scss\
+**make -** Controle dos arquivos fonte
 
 ## Uso
 
