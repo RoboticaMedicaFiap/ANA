@@ -2,11 +2,11 @@
 
 ## Conteúdo
 
-- [Instalação](#instalacao)
-- [Configuração](#configuracao)
+- [Instalação](#instalação)
+- [Configuração](#configuração)
 - [Uso](#uso)
 - [Suporte](#suporte)
-- [Contribuição](#contribuicao)
+- [Contribuição](#contribuição)
 
 ## Instalação
 
@@ -84,10 +84,10 @@ Execute o comando:
     make start
 ```
 
-## Support
+## Suporte
 
 Please [open an issue](https://github.com/RoboticaMedicaFiap/ANA/issues/new) for support.
 
-## Contributing
+## Contribuição
 
 Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/RoboticaMedicaFiap/ANA/compare/).
