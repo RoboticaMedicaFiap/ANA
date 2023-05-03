@@ -9,12 +9,12 @@ PROJECT := $(shell basename $(PWD))
 
 .PHONY: install
 install:
-	pip3 install -U --upgrade pip && pip3 install -U -r requirements.txt
+	python3 -m pip install --upgrade pip && python3 -m pip install -r requirements.txt
 
 ## Scripts
 .PHONY: clean
 clean:
-	pip3 uninstall -y -U -r requirements.txt
+	python3 -m pip install uninstall -y -r requirements.txt
 
 .PHONY: dev
 dev:
