@@ -7,3 +7,4 @@ numpy==1.24.3
 opencv-python==4.7.0.72
 pyscss==1.4.0
 python-dotenv==1.0.0
+watchdog==3.0.0

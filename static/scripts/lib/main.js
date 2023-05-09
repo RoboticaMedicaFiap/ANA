@@ -3,13 +3,13 @@ const handleCopyright = () => {
 }
 
 const handleListeners = () => {
-  $('.canvas__start').on('click', () => {
-    window.location.href = '/page-1'
+  $('.stepper').on('click', (e) => {
+    window.location.href = `/page-${e.target.dataset.step}`
   })
 }
 
 const handleLoader = () => {
-  setTimeout(() => $('.loader').removeClass('loader--active'), 1500)
+  setTimeout(() => $('.loader').addClass('loader--inactive'), 1500)
 }
 
 const handleParticles = () => {
