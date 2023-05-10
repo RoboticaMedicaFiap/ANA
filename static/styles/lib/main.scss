@@ -30,12 +30,6 @@
   }
 }
 
-.btn {
-  &__mic {
-
-  }
-}
-
 .canvas {
   &__start {
     bottom: 0;
@@ -114,6 +108,18 @@
     visibility: hidden !important;
     z-index: 0 !important;
   }
+}
+
+.microphone {
+  background-color: #232852;
+  background-image: url('/static/images/ANA-icone-microfone.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 92px;
+  border-radius: 72px;
+  height: 140px;
+  margin: 80px 0 0;
+  width: 140px;
 }
 
 .spin {
